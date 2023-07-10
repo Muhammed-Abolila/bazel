@@ -1,0 +1,353 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-background {
+    background-color: #00c3da;
+    border: 1px solid #00c3da
+}
+
+
+/* Start header Section */
+
+.home .navbar .navbar-brand {
+    width: 100px
+}
+
+.vert {
+    width: 2px;
+    height: 69px;
+    background-color: #ddd;
+    top: -35px;
+}
+
+.home .carousel .carousel-item .first {
+    background-image: url("../image/bg-image-28.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.home .carousel .carousel-item .second {
+    background-image: url("../image/bg-image-29.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.home .carousel-control-prev {
+    position: absolute;
+    top: 130px;
+    left: -78px;
+}
+
+.home .carousel-control-next {
+    position: absolute;
+    top: -30px;
+    left: -78px;
+}
+
+.home .carousel .carousel-item .layer {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+}
+
+.home .carousel .carousel-item .caption .caption-item h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.home .carousel .carousel-item .caption .caption-item .btn {
+    width: 8rem;
+    height: 3rem;
+    line-height: 200%
+}
+
+@media (max-width:992px) {
+    .home .navbar .social-icons {
+        display: none
+    }
+    .vert {
+        display: none
+    }
+}
+
+
+/* End header Section */
+
+
+/*Start Who we Are Section*/
+
+.who-we-are p {
+    width: 90%;
+    color: #787878;
+    font-size: 1.7rem;
+    line-height: 60px;
+}
+
+.who-we-are .btn {
+    transition: all .5s ease-in-out;
+}
+
+.who-we-are .btn:hover {
+    background: #000;
+    color: #fff
+}
+
+.writer:before {
+    border-right: 2px solid #ddd;
+    content: "";
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #00c3da
+}
+
+.animated:before {
+    animation: Cursor .5s steps(9) infinite, writer 6s steps(9) 1s infinite;
+}
+
+@keyframes Cursor {
+    from {
+        border-color: (255, 255, 255, .75)
+    }
+    to {
+        border-color: transparent
+    }
+}
+
+@keyframes writer {
+    0% {
+        width: 0;
+        content: "Apps"
+    }
+    20% {
+        width: 5rem;
+        content: "Apps"
+    }
+    35% {
+        width: 0;
+    }
+    50% {
+        width: 8rem;
+        content: "websites"
+    }
+    70% {
+        width: 0;
+    }
+    90% {
+        width: 9rem;
+        content: "softwares"
+    }
+    100% {
+        width: 0;
+        content: "softwares"
+    }
+}
+
+
+/*End Who we Are Section*/
+
+
+/*Start Creative Section*/
+
+.creative .head h2::before {
+    content: "C";
+    position: absolute;
+    top: -45px;
+    left: 46%;
+    font-size: 79px;
+    z-index: -1;
+    color: #f1f1f1;
+    font-weight: 600;
+}
+
+.creative .caption {
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 195, 218, 0.9);
+    opacity: 0;
+    transition: opacity .5s, top .5s;
+}
+
+.creative .caption:hover {
+    opacity: 1;
+    top: 0
+}
+
+
+/*End Creative Section*/
+
+
+/* Start What We Do Section */
+
+.what-we-do {
+    background-color: #626262
+}
+
+.what-we-do h2::after {
+    content: "W";
+    position: absolute;
+    top: -28px;
+    left: -2%;
+    font-size: 60px;
+    color: #fff;
+    z-index: 0;
+    opacity: .07;
+    font-weight: 600;
+}
+
+.what-we-do .top .fas {
+    color: #0aa195;
+}
+
+.what-we-do .text {
+    font-size: 1.1rem;
+}
+
+
+/* End What We Do Section */
+
+
+/*Start Offers Section*/
+
+.offers {
+    background-color: #f7f7f7
+}
+
+.offers .head h2 {
+    z-index: 3;
+}
+
+.offers .head h2::after {
+    content: "C";
+    position: absolute;
+    top: -25px;
+    left: 46%;
+    font-size: 60px;
+    color: #003300;
+    z-index: 0;
+    opacity: .07;
+    font-weight: 600;
+}
+
+.offers .card .card-body p {
+    font-size: 55px;
+    position: relative;
+}
+
+.offers .card .card-body p span {
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+}
+
+.offers .best {
+    transform: scaleY(1.05);
+}
+
+@media (max-width:992px) {
+    .offers .best {
+        transform: scaleY(1);
+    }
+}
+
+.offers .best .card-body p {
+    color: #00c3da;
+}
+
+
+/* End Offers Section */
+
+
+/*Start Testimonial Section*/
+ 
+.testimonial {
+    background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial ol li {
+    background-color: #dddddd;
+    width: 15px;
+    height: 15px;
+}
+
+.testimonial ol .active {
+    background-color: #00c3da;
+}
+
+.testimonial .carousel .carousel-inner {
+    overflow: visible;
+}
+
+.testimonial .testimonial-item {
+    width: 85%;
+    margin: auto;
+    background-color: #fff;
+}
+
+.testimonial .testimonial-item .image {
+    width: 135px;
+    top: -95px;
+    left: 43%;
+    background: transparent;
+}
+
+.testimonial .prev {
+    position: absolute;
+    bottom: 40%;
+    left: 0px;
+    color: #868686;
+    transition: all .5s;
+}
+
+.testimonial .next {
+    position: absolute;
+    bottom: 40%;
+    right: 0px;
+    color: #868686;
+    transition: all .5s;
+}
+
+.testimonial .prev:hover {
+    color: #00c3da;
+    left: -5px;
+}
+
+.testimonial .next:hover {
+    color: #00c3da;
+    right: -5px;
+}
+
+.testimonial .carousel-indicators {
+    bottom: -60px
+}
+
+
+/*End Testimonial Section*/
+
+
+/*Start Footer Section*/
+
+footer {
+    background-color: #f7f7f7
+}
+
+footer .head h2::after {
+    content: "G";
+    position: absolute;
+    top: -27px;
+    left: -1%;
+    font-size: 60px;
+    color: #003300;
+    opacity: .07;
+    font-weight: 600;
+}
+
+
+/*End Footer Section*/
